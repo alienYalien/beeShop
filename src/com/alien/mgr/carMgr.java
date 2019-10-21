@@ -1,20 +1,11 @@
 package com.alien.mgr;
 
-import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import com.alien.dao.cartDao;
 import com.alien.model.car;
-import com.alien.model.goods;
-import com.alien.model.order;
-import com.alien.model.orderItem;
 import com.alien.model.page;
-import com.alien.model.type;
-import com.alien.utils.dbUtil;
 import com.alien.utils.priceUtil;
 
 public class carMgr {

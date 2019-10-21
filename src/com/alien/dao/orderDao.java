@@ -54,7 +54,7 @@ public class orderDao {
 	}
 	public List<orderItem> selectAllItem(int orderid) throws SQLException{
 		QueryRunner r = new QueryRunner(dbUtil.getDataSource());
-		String sql="select i.id,i.price,i.amount,g.name goodsname from orderitem i,goods g where order_id=? and i.goods_id=g.id";
+		String sql="select i.id,i.price,i.amount,i.goods_id goodsid,g.name goodsname from orderitem i,goods g where order_id=? and i.goods_id=g.id";
 		return r.query(sql, new BeanListHandler<orderItem>(orderItem.class),orderid);
 	}
 	public int getOrderCount(int status) throws SQLException {

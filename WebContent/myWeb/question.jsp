@@ -12,15 +12,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>我的订单</title>
+        <title>我要提问</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		
-        <!-- Google Fonts
+        <!-- Open Sans Font
 		============================================ -->		
 		
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=latin,latin-ext" type="text/css" media="all" />
-		
 		<link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
 					
         <!-- Favicon
@@ -44,14 +43,14 @@
 		<!-- owl.transitions CSS
 		============================================ -->      
         <link rel="stylesheet" href="css/owl.transitions.css">
-        
-		<!-- font-awesome.min CSS
-		============================================ -->      
-        <link rel="stylesheet" href="css/font-awesome.min.css"> 
-		
+		 
 		<!-- meanmenu CSS
 		============================================ -->		
         <link rel="stylesheet" href="css/meanmenu.min.css" media="all" />
+        
+		<!-- font-awesome.min CSS
+		============================================ -->      
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         
  		<!-- animate CSS
 		============================================ -->         
@@ -60,7 +59,7 @@
 		<!-- nivo slider CSS
 		============================================ -->
 		<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" />
-		<link rel="stylesheet" href="css/preview.css" type="text/css" media="screen" />				
+		<link rel="stylesheet" href="css/preview.css" type="text/css" media="screen" />					
         
  		<!-- normalize CSS
 		============================================ -->        
@@ -84,11 +83,11 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-	
+        
 		<!-- Header Area Start-->	
       	<%@ include file="header.jsp"%>
       	<!-- Header Area End-->	
-      	
+      			
 		<!-- Brade Come Start -->
 		<div class="braed-come">
 			<div class="container">
@@ -97,7 +96,7 @@
 						<div class="braed">
 							<a href="#"><i class="fa fa-home"></i></a>
 							<span class="navegation-page">></span> 
-							我的订单
+							我要提问
 						</div>
 					</div>
 				</div>
@@ -105,108 +104,40 @@
 		</div>
 		<!-- Brade Come End -->
 		<!--Cut Page Medile Section Start-->
-		<div class="cut-page-medile-section">
-			 <div class="container">
-			 	<div class="row">
-			 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			 			<div class="cut-page-tab bg-bd">  
-			 				<div class="wish-content">
-			 					<c:if test="${!empty payMsg }">
-			 						<div class="fist-wist">
-										<p class="tab-heading">${payMsg }</p> 
-									</div>
-			 					</c:if>
-			 				<c:choose><c:when test="${empty orderlist }">
-			 					<div class="fist-wist">
-									<p class="tab-heading">空空如也！</p> 
-									<button class="button" onclick='location.href="${pageContext.request.contextPath }/myWeb/goodsList"'> 前往购物</button>
-								</div>
-							</c:when><c:otherwise>
-							<div class="second-wist table-responsive"> 
-	  			 					<table class="main-tabel table table-bordered ">
-			 							<thead>
-			 								<tr>
-			 									<th class=" ">订单编号</th>
-			 									<th class=" ">价格</th>
-			 									<th class=" ">商品信息</th>
-			 									<th class=" ">收货信息</th>
-			 									<th class=" ">订单状态</th>
-			 									<th class=" ">支付方式</th>
-			 									<th class=" ">支付时间</th>
-			 								</tr>
-			 							</thead> 
-										<tbody>
-											<c:forEach items="${orderlist }" var="order">
-											<tr>
-			         							<td><p>${order.id }</p></td>
-			         							<td><p>${order.total }</p></td>
-			         							<td>
-				         							<c:forEach items="${order.itemList }" var="item">
-					         							<p>${item.goodsname}(${item.price})x ${item.amount}
-					         							<c:if test="${order.status==4 }">
-					         								<a class="r-y-w-x" href="${pageContext.request.contextPath }/myWeb/goodsComment?id=${item.goodsid }"> >>评价</a>
-					         							</c:if>
-					         							</p>
-				         							</c:forEach>
-			         							</td>
-			         							<td>
-			         								<p>${order.name }</p>
-			         								<p>${order.phone }</p>
-			         								<p>${order.address }</p>
-			         							</td>
-												<td>
-													<p>
-														<c:if test="${order.status==2 }"><span style="color:red;">已付款</span></c:if>
-														<c:if test="${order.status==3 }"><span style="color:green;">已发货</span></c:if>
-														<c:if test="${order.status==4 }"><span style="color:black;">已完成</span></c:if>					
-													</p>
-												</td>
-												<td>
-													<p>
-														<c:if test="${order.paytype==1 }">微信</c:if>
-														<c:if test="${order.paytype==2 }">支付宝</c:if>
-														<c:if test="${order.paytype==3 }">货到付款</c:if>
-													</p>
-												</td>
-												<td><p>${order.datetime }</p></td>
-												<!--  
-												<td>
-													<c:if test="${order.status==4 }">
-														<div class="r-y-w-x">
-															<a href="${pageContext.request.contextPath }/myWeb/goodsDetails?id=${g.id }">
-																<p>评价</p>
-															</a>						
-														</div>
-													</c:if>		
-												</td>
-											
-												<td>
-													<i class="fa fa-check-square"></i>
-												</td>
-												<td>
-													<i class="fa fa-times"></i>
-												</td> 
-												 -->		
-											</tr>
-											</c:forEach>
-										</tbody>										
-				 					</table> 
-								</div>
-							</c:otherwise></c:choose>							
-			 				</div>  		 				
-			 			</div>
-			 		</div>
+		<div class="contact-medile-section">
+			<div class="container"> 
+			 	<div class="contact  bg-bd">
+			 		<div class="r-y-w">
+						<a href="${pageContext.request.contextPath }/myWeb/goodsDetails?id=${id }">
+							<p>  《《  返回继续购物</p>
+						</a>						
+					</div>
+				 	<div class="form-area"> 
+			 			<form action="${pageContext.request.contextPath }/myWeb/goodsQuestionCommit" method="post">
+				 			<div class="row"> 
+				 				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				 					<p class="sent-hed">我要提问</p>
+				 					<input type="hidden" name="id" value="${id }">
+				 					<c:if test="${!empty questionMsg }">
+				 						<label><strong>${questionMsg }</strong></label>
+				 					</c:if>
+									<p>商品名称 ：${name }</p>
+				 					<label for="#">提问内容：</label>
+				 					<textarea cols="60" rows="15" name="content"></textarea>
+				 					<button class="button">提交</button>
+				 				</div>
+				 			</div>
+			 			</form>  
+				 	</div>	
 			 	</div>
 			 </div>
-		</div>
 		<!-- Cut Page Medile Section Start End-->
-				
+		
 		<!-- Footer Area Start-->	
       	<%@ include file="footer.jsp"%>
 		<!-- Footer Area End -->
 		
         <!-- JS --> 
-
 
  		<!-- jquery-1.11.3.min js
 		============================================ -->         
@@ -249,7 +180,33 @@
         
    		<!-- plugins js
 		============================================ -->         
-        <script src="js/plugins.js"></script>
+        <script src="js/plugins.js"></script> 
+		
+		<!-- Google Map js -->
+        <script src="http://ditu.google.cn/maps/api/js"></script>
+		<script>
+			function initialize() {
+			  var mapOptions = {
+				zoom: 15,
+				scrollwheel: false,
+				center: new google.maps.LatLng(40.663293, -73.956351)
+			  };
+
+			  var map = new google.maps.Map(document.getElementById('googleMap'),
+				  mapOptions);
+
+
+			  var marker = new google.maps.Marker({
+				position: map.getCenter(),
+				animation:google.maps.Animation.BOUNCE,
+				icon: 'img/map-marker.png',
+				map: map
+			  });
+
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>	
         
    		<!-- main js
 		============================================ -->           

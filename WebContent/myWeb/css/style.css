@@ -944,7 +944,18 @@ span.leval {
 } 
 .rank {
   margin-left: 35%;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
+}
+.comment-rank i{
+  color: #faa71d;
+  float: left;
+  font-size: 13px;
+  padding: .5px;
+  margin-top: -12px;
+} 
+.comment-rank {
+  margin-left: 35%;
+  padding-bottom: 30px;
 }
 .price-box a p{
   color: #4c4c4c;
@@ -2708,19 +2719,19 @@ span.color a:hover {
 }
 .print ul li {
   display: inline-block;
-  
 }
 .print ul li a{
   background-color: #fff;
-  border: 2px solid #0a97d4;
+  border: 2px solid #b3bdc1;
   border-radius: 100%;
-  color: #0a97d4;
+  color: #b5b8b9;
   display: inline-block; 
   font-size: 16px; 
-  height: 40px;
+  padding-top:4px;
   line-height: 35px;
   text-align: center;
-  width: 40px;
+  width: 30px;
+  height:30px;
 }
 .print ul li a:hover{
 	background-color: #0a97d4;
@@ -2796,7 +2807,7 @@ span.color a:hover {
   display: inline-block;
   position: relative;
 }
-.tab-vew-reviw ul li::after {
+.tab-vew-reviw-ul-li::after {
   background: #ccc none repeat scroll 0 0;
   content: "";
   height: 66px;
@@ -2830,8 +2841,23 @@ span.color a:hover {
 .right-reviw {
   margin: 0;
   overflow: hidden;
-  padding: 0 0 20px 60px;
-  text-align: right;
+  padding: 0 0 0px 60px;
+  text-align: left;
+}
+.right-reviw::after {
+  background: #ccc none repeat scroll 0 0;
+  content: "";
+  height: 66px;
+  position: absolute;
+  right: -25px;
+  top: 17px;
+  width: 1px;
+}
+.right-reply {
+  margin: 0;
+  overflow: hidden;
+  padding: 0 0 0px 60px;
+  text-align: left;
 }
 .smol-slide {
   margin: 15px 0 0;
@@ -3178,6 +3204,14 @@ color: #fff;
 position: relative;
 text-transform: uppercase;
 transition: all 0.3s ease 0s;
+}
+.r-y-w-x{
+border: 0 none;
+color: #ff8000;
+position: relative;
+text-transform: uppercase;
+transition: all 0.3s ease 0s;
+margin-top: 10px;
 }
 .form-area button.button,
 .main-form.border button.button {

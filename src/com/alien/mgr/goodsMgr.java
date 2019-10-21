@@ -4,9 +4,9 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
+import com.alien.dao.goodsDao;
 import com.alien.model.goods;
 import com.alien.model.page;
-import com.alien.servlt.goodsDao;
 
 public class goodsMgr {
 	private goodsDao gDao=new goodsDao();

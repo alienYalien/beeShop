@@ -1,4 +1,4 @@
-package com.alien.servlt;
+package com.alien.dao;
 
 import java.sql.SQLException;
 import java.util.List;

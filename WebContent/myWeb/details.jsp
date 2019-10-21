@@ -154,13 +154,13 @@
 										<div class="price-box"> 
 											<p class="price-box-heading">${g.name }</p>
 											<p class="product-reference">
-												类别 :<span>${g.type.typename }</span>
+												类别 ：<span>${g.type.typename }</span>
 											</p>
 											<p class="product-condition">
-												库存:<span>${g.stock }</span>
+												库存：<span>${g.stock }</span>
 											</p>
 											<div class="price">
-												<h5>￥ ${g.price }<span>￥ ${g.price }</span></h5>
+												<h5>￥ ${g.price } <span> ￥ ${g.price }</span></h5>
 											</div> 
 											<p class="desc">${g.intro } </p>
 											<div class="action">
@@ -169,15 +169,6 @@
 														<c:if test="${!empty addCarMsg }">
 															<h5>${addCarMsg }</h5>
 														</c:if>  
-													</div> 
-													<div class="price">	</div> 
-													<div class="quantity">
-														<p class="product-condition">
-															数量 
-														</p>
-														<div class="dec qtybutton">-</div> 
-														<input type="number" name="amount" value="1"> 
-														<div class="inc qtybutton">+</div>
 													</div> 
 													<div class="product-text"> 
 														<a href="${pageContext.request.contextPath }/myWeb/carAdd?goodsid=${g.id}"><p>加入购物车</p></a>  
@@ -199,20 +190,15 @@
 												<p class="product-condition">
 													评分
 												</p> 
-												<div class="rank">
-													<a href="#"><i class="fa fa-star"></i></a>
-													<a href="#"><i class="fa fa-star"></i></a>
-													<a href="#"><i class="fa fa-star"></i></a>
-													<a href="#"><i class="fa fa-star"></i></a>
-													<a href="#"><i class="fa fa-star"></i></a>
-												</div>
+							
 												<div class="review">
 													<ul class="clear">
 														<li>  
-															<a class="comment"  href="#">查看评论<span>（0）</span></a>
+															<a class="comment" >买家评价<span>（${commentList.size() }）</span></a>
 														 </li>
 														<li>  
-															<a class="pencil "  href="#">我要提问</a>
+															<a class="pencil" href="${pageContext.request.contextPath }/myWeb/goodsSocial?id=${g.id }&type=${1 }">
+															我要提问</a>
 														</li>
 													</ul> 
 												</div>
@@ -227,7 +213,8 @@
 							<ul class="tab-menu" role="tablist">
 								<li role="presentation" class="active"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">更多介绍</a></li>
 								<li role="presentation"><a href="#data" aria-controls="data" role="tab" data-toggle="tab">基本信息</a></li>
-								<li role="presentation"><a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab">评论</a></li> 
+								<li role="presentation"><a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab">买家评价</a></li> 
+								<li role="presentation"><a href="#question" aria-controls="question" role="tab" data-toggle="tab">相关提问</a></li> 
 							</ul>
 							<div class="tab-content">
 								<div role="tabpanel" class="tab-pane active" id="info">
@@ -255,35 +242,75 @@
 								</div>
 								<div role="tabpanel" class="tab-pane" id="reviews">
 									<div class="tab-vew-reviw">
+										<c:forEach items="${commentList }" var="comment">
 										<ul>
-											<li>
-												<span class="reviw-text">
-													 评分
-												</span> 
-												<div class="rank">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>													
-												</div>	 
+											<li>		
+												<div class="reviw-text">
+												评 分 ：
+													<div class="comment-rank">
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>													
+													</div>	 
+												</div>				
 												<div class="reviw-date">
-													<h6>gdragaggd</h6>
-													<span class="date">
-														25/12/2014
-													</span>
+													<h4>${comment.name }</h4>
+													<h5>${comment.datetime }</h5>
 												</div>
 											</li>
 											<li class="right-reviw">
-												<h6>内容</h6>
-												<p>gdrafdshksd</p>
+												<p>内容： ${comment.content }</p>
 											</li>
 										</ul>
-										<div class="r-y-w">
-											<a href="#"><p>我 要 提 问 ！</p></a>						
-										</div>
+										</c:forEach>
 									</div>
 								</div> 
-							</div>  
+								<div role="tabpanel" class="tab-pane" id="question">	
+									<div class="tab-vew-reviw">
+										<c:forEach items="${questionList }" var="question">
+										<ul>
+											<li class="tab-vew-reviw-ul-li">		
+												<div class="reviw-text">
+												评 分 ：
+													<div class="comment-rank">
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>													
+													</div>	 
+												</div>				
+												<div class="reviw-date">
+													<h4>${question.name }</h4>
+													<h5>${question.datetime }</h5>
+												</div>
+											</li>
+											<li class="right-reviw">
+												<p>内容： </p>
+												<p>${question.content }</p>
+												<div class="print"> 
+													<ul role="tablist">
+														<li><a class="envelop" href="${pageContext.request.contextPath }/myWeb/goodsSocial?id=${question.id }&type=${2 }"><i class="fa fa-envelope"></i></a></li>
+														<li role="presentation" ><a aria-controls="data" role="tab" data-toggle="tab" class="print" href="#"><i class="fa fa-print"></i></a></li>
+														<li role="presentation" ><a aria-controls="data" role="tab" data-toggle="tab" class="headt" href="#"><i class="fa fa-heart"></i></a></li>
+													</ul>
+												</div>	
+											</li>		
+											<li class="right-reply">
+												<c:forEach items="${question.replyList }" var="reply">
+													<p>${reply.name } @ 回复：${reply.content }</p>		
+												</c:forEach>									
+											</li>							
+										</ul>
+										</c:forEach>
+										<div class="r-y-w">
+											<a href="${pageContext.request.contextPath }/myWeb/goodsSocial?id=${g.id }&type=${1 }">
+												<p> 点 我 ，提 出 问 题  ！</p>
+											</a>						
+										</div>
+									</div>		
+			 					</div>
+							</div> 
 						</div>
 						<div class="p-m-s bg-bd"> 
 						<!-- 商家推荐 Start -->	
