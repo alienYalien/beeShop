@@ -1,7 +1,6 @@
 # beeShop
-# beeShop
 
-## 书城项目演示文档(可做毕设，需要请留言~)
+## 商城项目演示文档(可做毕设，需要请留言~)
 
 商城网站。前台：jsp，javascript，jtsl  + 后台：java ，mvc 框架，bootstrap + 数据库：mysql +tomcat7.0
 
