@@ -1,6 +1,8 @@
 package com.alien.dao;
 
+import java.math.BigDecimal;
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.List;
 
 import org.apache.commons.dbutils.QueryRunner;
@@ -9,7 +11,7 @@ import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.MapHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
+//import com.sun.org.apache.bcel.internal.generic.NEW;
 import com.alien.model.order;
 import com.alien.model.user;
 import com.alien.utils.dbUtil;
@@ -69,6 +71,12 @@ public class userDao {
 		String sql="update user set name= ?,phone= ?,address = ? where id = ?";
 		r.update(sql, user.getName(),user.getPhone(),user.getAddress(),user.getId());
 	}
+	//修改用户登陆次数
+	public void updateLoginNum(int id,int loginnum, Date logintime) throws SQLException {
+		QueryRunner r = new QueryRunner(dbUtil.getDataSource());
+		String sql="update user set loginnum= ?,logintime= ? where id = ?";
+		r.update(sql,loginnum,logintime,id);
+	}
 	//修改用户密码
 	public void updatePwd(user user) throws SQLException {
 		QueryRunner r = new QueryRunner(dbUtil.getDataSource());
@@ -81,6 +89,13 @@ public class userDao {
 		String sql="";
 		sql="select count(*) from user";
 		return r.query(sql, new ScalarHandler<Long>()).intValue();
+	}
+	//用户登陆总数
+	public int selectUserLoginNumCount() throws SQLException {
+		QueryRunner r=new QueryRunner(dbUtil.getDataSource());
+		String sql="";
+		sql="select sum(loginnum) from user";
+		return Integer.parseInt(r.query(sql, new ScalarHandler<BigDecimal>()).toString());
 	}
 	//获取user列表
 	public List selectUserList(int pageNo, int pageSize) throws SQLException {

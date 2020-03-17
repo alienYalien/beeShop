@@ -11,10 +11,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.alien.model.order;
+import com.alien.model.orderItem;
 import com.alien.model.car;
+import com.alien.model.goods;
 import com.alien.model.user;
 import com.alien.mgr.orderMgr;
 import com.alien.mgr.carMgr;
+import com.alien.mgr.goodsMgr;
 
 /**
  * Servlet implementation class orderPaymentServlt
@@ -24,6 +27,7 @@ public class orderPaymentServlt extends HttpServlet {
 	
 	private orderMgr oMgr=new orderMgr();
 	private carMgr cMgr=new carMgr();
+	private goodsMgr gMgr=new goodsMgr();
 	
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
@@ -51,7 +55,18 @@ public class orderPaymentServlt extends HttpServlet {
 		car c=(car)request.getSession().getAttribute("car");
 		oMgr.carToOrder(c,u,paytype);
 		
-		List<order> orderList=oMgr.selectAll(u.getId());
+		//更新商品销量
+		List<order> orderList= null;
+		orderList= oMgr.selectAll(u.getId());
+		for(int i=0;i<orderList.size();i++){
+			List<orderItem> orderItem= null;
+			orderItem= orderList.get(i).getItemList();
+			for(int j=0;j<orderItem.size();j++){
+				int goodsid =orderItem.get(j).getGoodsid();
+				goods g =gMgr.getById(goodsid);
+				gMgr.updateBuy(g.getId(), g.getBuy());
+			}
+		}
 		request.setAttribute("orderlist", orderList);
 		request.setAttribute("payMsg", "支付成功！");
 		

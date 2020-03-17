@@ -34,6 +34,7 @@ public class userLoginServlt extends HttpServlet {
 			request.setAttribute("failMsg", "用户名或密码错误，请重新尝试！");
 			request.getRequestDispatcher("/myWeb/login.jsp").forward(request, response);
 		}else {
+			uMgr.loginNum(user.getId(),user.getLoginnum());
 			request.getSession().setAttribute("user", user);
 //			request.getRequestDispatcher("/myWeb/home.jsp").forward(request, response);
 			response.sendRedirect(request.getContextPath()+"/myWeb/home");//重定向到首页

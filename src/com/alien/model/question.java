@@ -13,7 +13,7 @@ public class question {
 	private String content;
 	private Date datetime;
 	
-	private List<reply> replyList=new ArrayList<>();
+	private List<reply> replyList=new ArrayList<reply>();
 	
 	public int getId() {
 		return id;

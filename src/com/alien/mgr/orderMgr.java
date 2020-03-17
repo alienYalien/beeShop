@@ -147,6 +147,16 @@ public class orderMgr {
 		}
 		
 	}
+	//统计订单量
+	public int selectOrderCount() {
+		try {
+			return oDao.selectOrderCount();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return -1;
+		}		
+	}
 	
 	//计算总数量
 	public int calAllAmount(List<car> l){
@@ -165,5 +175,6 @@ public class orderMgr {
 		}	
 		return all;
 	}		
+	
 }
 

@@ -1,5 +1,6 @@
 package com.alien.dao;
 
+import java.math.BigDecimal;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
@@ -11,7 +12,7 @@ import org.apache.commons.dbutils.handlers.MapHandler;
 import org.apache.commons.dbutils.handlers.MapListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
+//import com.sun.org.apache.bcel.internal.generic.NEW;
 import com.alien.model.goods;
 import com.alien.model.recommend;
 import com.alien.utils.dbUtil;
@@ -61,7 +62,7 @@ public class goodsDao {
 		QueryRunner r=new QueryRunner(dbUtil.getDataSource());
 		if(type==0) {
 			//当不添加推荐类型限制的时候
-		String sql="select g.id,g.name,g.cover,g.image1,g.image2,g.intro,g.price,g.stock,t.typename from goods g,type t where g.type_id=t.id limit ?,?";
+		String sql="select g.id,g.name,g.cover,g.image1,g.image2,g.intro,g.price,g.stock,g.view,g.buy,t.typename from goods g,type t where g.type_id=t.id limit ?,?";
 		return r.query(sql, new BeanListHandler<goods>(goods.class),(pageNo-1)*pageSize,pageSize);	
 		}
 		String sql="select g.id,g.name,g.cover,g.image1,g.image2,g.intro,g.price,g.stock,t.typename from goods g,recommend r,type t where g.id=r.goods_id and g.type_id=t.id and r.type=? limit ?,?";
@@ -76,7 +77,7 @@ public class goodsDao {
 	//根据ID查找单个商品
 	public goods getById(int id) throws SQLException {
 		QueryRunner r=new QueryRunner(dbUtil.getDataSource());
-		String sql="select g.id,g.name,g.cover,g.image1,g.image2,g.price,g.intro,g.stock,t.id typeid,t.typename typename from goods g,type t where g.id=? and g.type_id=t.id";
+		String sql="select g.id,g.name,g.cover,g.image1,g.image2,g.price,g.intro,g.stock,g.view,g.buy,t.id typeid,t.typename typename from goods g,type t where g.id=? and g.type_id=t.id";
 		return r.query(sql, new BeanHandler<goods>(goods.class),id);
 	}
 	//模糊查询
@@ -142,5 +143,32 @@ public class goodsDao {
 		QueryRunner r=new QueryRunner(dbUtil.getDataSource());
 		String sql="delete from goods where id=?";
 		r.update(sql,id);
+	}
+	//更新商品访问量
+	public void updateView(int id,int num) throws SQLException {
+		QueryRunner r = new QueryRunner(dbUtil.getDataSource());
+		String sql="update goods set view= ? where id = ?";
+		r.update(sql,num,id);
+	}
+	//更新商品购买量
+	public void updateBuy(int id,int num) throws SQLException {
+		QueryRunner r = new QueryRunner(dbUtil.getDataSource());
+		String sql="update goods set buy= ? where id = ?";
+		r.update(sql,num,id);
+	}
+
+	//统计商品总购买量
+	public int selectBuyCount() throws SQLException {
+		QueryRunner r=new QueryRunner(dbUtil.getDataSource());
+		String sql="";
+		sql="select sum(buy) from `goods`";
+		return Integer.parseInt(r.query(sql, new ScalarHandler<BigDecimal>()).toString());
+	}
+	//统计商品总访问量
+	public int selectViewCount() throws SQLException {
+		QueryRunner r=new QueryRunner(dbUtil.getDataSource());
+		String sql="";
+		sql="select sum(view) from `goods`";
+		return Integer.parseInt(r.query(sql, new ScalarHandler<BigDecimal>()).toString());
 	}
 }

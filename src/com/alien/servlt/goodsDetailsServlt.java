@@ -32,6 +32,7 @@ public class goodsDetailsServlt extends HttpServlet {
 		int goodsid=Integer.parseInt(request.getParameter("id"));
 		
 		goods g=gMgr.getById(goodsid);
+		gMgr.updateView(g.getId(),g.getView());
 		request.setAttribute("g", g);
 		
 		List<comment> commentList=cMgr.selectAll(goodsid);

@@ -21,7 +21,7 @@ public class order {
 	private user user;
 	
 	private  Map<Integer, orderItem> itemMap=new HashMap<Integer, orderItem>();
-	private List<orderItem> itemList=new ArrayList<>();
+	private List<orderItem> itemList=new ArrayList<orderItem>();
 	
 	public void setUsername(String username) {
 		user =new user();

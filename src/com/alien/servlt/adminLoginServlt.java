@@ -39,8 +39,8 @@ public class adminLoginServlt extends HttpServlet {
 			request.getRequestDispatcher("/myAdmin/adminLogin.jsp").forward(request, response);
 		}else {
 			request.getSession().setAttribute("admin", admin);
-			//request.getRequestDispatcher("/myAdmin//main.jsp").forward(request, response);
-			response.sendRedirect("/myAdmin//main.jsp");
+//			request.getRequestDispatcher("/myAdmin/index.jsp").forward(request, response);
+			response.sendRedirect(request.getContextPath()+"/myAdmin/main.jsp");
 		}
 	}
 

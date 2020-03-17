@@ -15,7 +15,7 @@ public class car {
 	private String image1;
 	private float price;
 	
-	private List<car> carList=new ArrayList<>();
+	private List<car> carList=new ArrayList<car>();
 	private int allamount;//商品总数
 	private float allprice;//总价
 	

@@ -159,6 +159,12 @@
 											<p class="product-condition">
 												库存：<span>${g.stock }</span>
 											</p>
+											<p class="product-condition">
+												销量：<span>${g.buy }</span>
+											</p>
+											<p class="product-condition">
+												浏览量：<span>${g.view }</span>
+											</p>
 											<div class="price">
 												<h5>￥ ${g.price } <span> ￥ ${g.price }</span></h5>
 											</div> 

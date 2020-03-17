@@ -25,8 +25,10 @@
 		<th width="10%">图片</th>
 		<th width="10%">名称</th>
 		<th width="20%">介绍</th>
-		<th width="10%">价格</th>
+		<th width="5%">价格</th>
 		<th width="10%">类目</th>
+		<th width="5%">浏览量</th>
+		<th width="5%">销量</th>
 		<th width="25%">操作</th>
 	</tr>
 	
@@ -38,6 +40,8 @@
          	<td><p>${g.intro }</p></td>
          	<td><p>${g.price }</p></td>
          	<td><p>${g.type.typename }</p></td>
+         	<td><p>${g.view }</p></td>
+         	<td><p>${g.buy }</p></td>
 			<td>
 				<p>
 				

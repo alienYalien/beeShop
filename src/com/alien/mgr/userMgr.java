@@ -1,6 +1,7 @@
 package com.alien.mgr;
 
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.List;
 
 import com.alien.dao.userDao;
@@ -27,6 +28,36 @@ public class userMgr {
 			e.printStackTrace();
 		}
 		return false;
+	}
+	//登陆次数
+	public void loginNum(int id,int num) {
+		try {
+			int loginnum=num+1;
+			uDao.updateLoginNum(id,loginnum,new Date());
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	//用户登陆总数
+	public int selectUserLoginNumCount() {
+		try {
+			return uDao.selectUserLoginNumCount();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return -1;
+		}		
+	}
+	//用户总量
+	public int selectUserCount() {
+		try {
+			return uDao.selectUserCount();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return -1;
+		}		
 	}
 	//登陆服务
 	public user login(String ue,String password) {

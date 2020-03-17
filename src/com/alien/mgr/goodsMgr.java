@@ -1,12 +1,17 @@
 package com.alien.mgr;
 
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
+
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.ScalarHandler;
 
 import com.alien.dao.goodsDao;
 import com.alien.model.goods;
 import com.alien.model.page;
+import com.alien.utils.dbUtil;
 
 public class goodsMgr {
 	private goodsDao gDao=new goodsDao();
@@ -146,6 +151,26 @@ public class goodsMgr {
 		}
 		return g;
 	}
+	//更新商品访问量
+	public void updateView(int id,int num) {
+		try {
+			int _num =num+1;
+			gDao.updateView(id,_num);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	//更新商品购买量
+	public void updateBuy(int id,int num) {
+		try {
+			int _num =num+1;
+			gDao.updateBuy(id,_num);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	public page getSearchGoodsPage(String keyword, int pageNo) {
 		page p=new page();//新建一个分页对象
 		p.setPageNo(pageNo);//设置第几页
@@ -212,4 +237,25 @@ public class goodsMgr {
 			e.printStackTrace();
 		}
 	}
+	//统计商品总访问量
+	public int selectViewCount() {
+		try {
+			return gDao.selectViewCount();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return -1;
+		}		
+	}
+	//统计商品总购买量
+	public int selectBuyCount() {
+		try {
+			return gDao.selectBuyCount();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return -1;
+		}		
+	}
+	
 }

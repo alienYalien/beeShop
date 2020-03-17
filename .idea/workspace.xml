@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d76607a-0e46-40ed-bd45-d05aee20ca05" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/myAdmin/js/editor_api(冲突时的文件备份2014-04-30 19-06-40).js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/dao/adminDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/dao/adminDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/dao/cartDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/dao/cartDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/dao/commentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/dao/commentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/dao/goodsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/dao/goodsDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/dao/orderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/dao/orderDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/dao/questionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/dao/questionDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/dao/replyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/dao/replyDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/dao/typeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/dao/typeDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/dao/userDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/dao/userDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/filter/EncodeFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/filter/EncodeFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/filter/adminFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/filter/adminFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/listener/applicationListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/listener/applicationListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/listener/hotListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/listener/hotListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/listener/scrollListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/listener/scrollListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/listener/typeListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/listener/typeListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/mgr/adminMgr.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/mgr/adminMgr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/mgr/carMgr.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/mgr/carMgr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/mgr/commentMgr.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/mgr/commentMgr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/mgr/goodsMgr.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/mgr/goodsMgr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/mgr/orderMgr.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/mgr/orderMgr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/mgr/questionMgr.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/mgr/questionMgr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/mgr/replyMgr.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/mgr/replyMgr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/mgr/typeMgr.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/mgr/typeMgr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/mgr/userMgr.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/mgr/userMgr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/model/admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/model/admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/model/car.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/model/car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/model/comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/model/comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/model/goods.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/model/goods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/model/order.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/model/order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/model/orderItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/model/orderItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/model/page.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/model/page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/model/question.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/model/question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/model/recommend.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/model/recommend.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/model/reply.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/model/reply.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/model/type.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/model/type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/model/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/model/user.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminChangePwd.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminChangePwd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminGoodsAddServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminGoodsAddServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminGoodsDeleteServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminGoodsDeleteServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminGoodsEditServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminGoodsEditServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminGoodsEditShowServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminGoodsEditShowServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminGoodsListServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminGoodsListServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminGoodsRecommendServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminGoodsRecommendServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminLoginServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminLoginServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminLogoutServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminLogoutServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminOrderDeleteServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminOrderDeleteServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminOrderListServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminOrderListServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminOrderStatusServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminOrderStatusServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminTypeAddServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminTypeAddServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminTypeDeleteServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminTypeDeleteServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminTypeEditServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminTypeEditServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminTypeListServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminTypeListServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminUserAddServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminUserAddServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminUserDeleteServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminUserDeleteServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminUserEditServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminUserEditServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminUserEditShowServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminUserEditShowServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminUserListServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminUserListServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminUserResetServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/adminUserResetServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/blogListServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/blogListServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/carAddServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/carAddServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/carListServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/carListServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/carReduceServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/carReduceServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsCommentCommit.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsCommentCommit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsCommentServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsCommentServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsDetailsServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsDetailsServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsListServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsListServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsPeplyServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsPeplyServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsQuestionCommit.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsQuestionCommit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsReplyCommit.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsReplyCommit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsSearchServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsSearchServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsSocialServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsSocialServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsTypeListServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/goodsTypeListServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/indexServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/indexServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/orderListServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/orderListServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/orderPaymentServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/orderPaymentServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/userLoginServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/userLoginServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/userLogoutServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/userLogoutServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/userModifyAddressServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/userModifyAddressServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/userModifyPwd.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/userModifyPwd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/servlt/userRegisterServlt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/servlt/userRegisterServlt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/utils/dateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/utils/dateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/utils/dbUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/utils/dbUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/alien/utils/priceUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/alien/utils/priceUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alien/dao/adminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alien/dao/adminDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alien/dao/cartDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alien/dao/cartDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alien/dao/goodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alien/dao/goodsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alien/dao/orderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alien/dao/orderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alien/dao/typeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alien/dao/typeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alien/dao/userDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alien/dao/userDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alien/filter/adminFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alien/filter/adminFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alien/listener/applicationListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alien/listener/applicationListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alien/listener/hotListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alien/listener/hotListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alien/listener/scrollListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alien/listener/scrollListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alien/listener/typeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alien/listener/typeListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alien/model/car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alien/model/car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alien/model/order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alien/model/order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/alien/model/question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alien/model/question.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZC5fM0xUCgWHXDOZzXXPdokNkG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\githupByMyCode\beeShop\lib" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d76607a-0e46-40ed-bd45-d05aee20ca05" name="Default Changelist" comment="" />
+      <created>1584330337957</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584330337957</updated>
+      <workItem from="1584330341912" duration="1983000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="175" y="0" key="#HTTP_Proxy" timestamp="1584330902012">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="175" y="0" key="#HTTP_Proxy/0.0.1366.728@0.0.1366.728" timestamp="1584330902012" />
+    <state x="413" y="46" key="FileChooserDialogImpl" timestamp="1584330877830">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="46" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584330877830" />
+  </component>
+</project>

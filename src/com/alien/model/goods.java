@@ -1,6 +1,6 @@
 package com.alien.model;
 
-public class goods {
+public class  goods{
 	private int id;
 	private String name;
 	private String cover;
@@ -10,13 +10,26 @@ public class goods {
 	private String intro;
 	private int stock;
 	private type type;
-	
+	private int view;
+	private int buy;
+
 	private boolean isScroll;
 	private boolean isHot;
 	private boolean isNew;
 	
-	 
+	public int getView() {
+		return view;
+	}
+	public void setView(int view) {
+		this.view = view;
+	}
 	
+	public int getBuy() {
+		return buy;
+	}
+	public void setBuy(int buy) {
+		this.buy = buy;
+	}
 
 	public void setTypeid(int typeid) {
 		if(type==null) {
@@ -85,7 +98,7 @@ public class goods {
 	public void setType(type type) {
 		this.type = type;
 	}
-	public goods(int id, String name, String cover, String image1, String image2, float price, String intro, int stock,
+	public goods(int id, String name, String cover, String image1, String image2, float price, String intro, int stock,int buy,int view,
 			type type) {
 		super();
 		this.id = id;
@@ -96,6 +109,8 @@ public class goods {
 		this.price = price;
 		this.intro = intro;
 		this.stock = stock;
+		this.buy = buy;
+		this.view = view;
 		this.type = type;
 	}
 	public goods() {
@@ -120,5 +135,10 @@ public class goods {
 		this.isNew = isNew;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "goods [id=" + id + ", name=" + name + ", cover=" + cover + ", image1=" + image1 + ", image2=" + image2
+				+ ", price=" + price + ", intro=" + intro + ", stock=" + stock + ", type=" + type + ", view=" + view
+				+ ", buy=" + buy + ", isScroll=" + isScroll + ", isHot=" + isHot + ", isNew=" + isNew + "]";
+	}
 }

@@ -34,3 +34,4 @@ body{padding-bottom:20px;}
 .content-list .content-item .content-bd .content-list-item {margin-bottom:10px;overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
 .content-list .content-item .content-bd .content-list-item .icon{*position:relative;*top:-3px;display:inline-block;margin-right:5px;width:8px;height:9px; background:url(../../img/skin_/plist.png);}
 .content-list .content-item .content-bd .content-list-item a{color:#000;}
+.content-bd-word{margin-top:30px;margin-left:150px;font: 72px/1.5 'Microsoft Yahei',Tahoma,'微软雅黑';color:#0080ff;}

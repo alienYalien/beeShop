@@ -11,7 +11,7 @@ import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.MapHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
+//import com.sun.org.apache.bcel.internal.generic.NEW;
 import com.alien.model.goods;
 import com.alien.model.order;
 import com.alien.model.orderItem;
@@ -95,6 +95,13 @@ public class orderDao {
 		QueryRunner r=new QueryRunner();
 		String sql="delete from orderitem where order_id = ?";
 		r.update(con,sql,id); 
+	}
+	//统计订单量
+	public int selectOrderCount() throws SQLException {
+		QueryRunner r=new QueryRunner(dbUtil.getDataSource());
+		String sql="";
+		sql="select count(*) from `order`";
+		return r.query(sql, new ScalarHandler<Long>()).intValue();
 	}
 }
 

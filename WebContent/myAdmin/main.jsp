@@ -24,15 +24,18 @@
                 <span class="user-name">${admin.adminname }</span>        
             </div>
             <div class="setting ue-clear">
-            	<div class="setting-skin">
+                  <!--  
+                  <div class="setting-skin">
                 	<div class="switch-bar">
                     	<i class="skin-icon"></i>
                         <span class="text">皮肤</span>
                         <i class="arrow-icon"></i>
                     </div>
                 </div>
+                  -->
+            	
                 <ul class="setting-main ue-clear">
-                	<li><a href="javascript:;">桌面</a></li>
+                	<!-- <li><a href="javascript:;">桌面</a></li> -->
                     <li><a href="javascript:;">帮助</a></li>
                     <li><a href="javascript:;" class="close-btn exit"></a></li>
                 </ul>

@@ -1,5 +1,7 @@
 package com.alien.model;
 
+import java.util.Date;
+
 public class user {
 	private int id;
 	private String username;
@@ -10,6 +12,8 @@ public class user {
 	private String address;
 	private boolean isadmin=false;
 	private boolean isvalidate=false;
+	private int loginnum;
+	private Date logintime;
 	public int getId() {
 		return id;
 	}
@@ -63,21 +67,20 @@ public class user {
 	}
 	public void setIsvalidate(boolean isvalidate) {
 		this.isvalidate = isvalidate;
+	}	
+	public int getLoginnum() {
+		return loginnum;
 	}
-	public user(int id, String username, String email, String password, String name, String phone, String address,
-			boolean isadmin, boolean isvalidate) {
-		super();
-		this.id = id;
-		this.username = username;
-		this.email = email;
-		this.password = password;
-		this.name = name;
-		this.phone = phone;
-		this.address = address;
-		this.isadmin = isadmin;
-		this.isvalidate = isvalidate;
+	public void setLoginnum(int loginnum) {
+		this.loginnum = loginnum;
 	}
-	public user(String username, String email, String password, String name, String phone, String address) {
+	public Date getLogintime() {
+		return logintime;
+	}
+	public void setLogintime(Date logintime) {
+		this.logintime = logintime;
+	}
+	public user(String username, String email, String password, String name, String phone, String address,int loginnum,Date logintime) {
 		super();
 		this.username = username;
 		this.email = email;
@@ -87,15 +90,17 @@ public class user {
 		this.address = address;
 		this.isadmin = false;
 		this.isvalidate = false;
+		this.loginnum = loginnum;
+		this.logintime = logintime;
 	}
 	public user() {
 		super();
 	}
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", email=" + email + ", password=" + password + ", name="
+		return "user [id=" + id + ", username=" + username + ", email=" + email + ", password=" + password + ", name="
 				+ name + ", phone=" + phone + ", address=" + address + ", isadmin=" + isadmin + ", isvalidate="
-				+ isvalidate + "]";
+				+ isvalidate + ", loginnum=" + loginnum + ", logintime=" + logintime + "]";
 	}
 	
 	

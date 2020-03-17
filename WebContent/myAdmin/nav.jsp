@@ -24,7 +24,7 @@
                  <li class="nav-li current">   	
                  	<a href="javascript:;" class="ue-clear current"><span  class="nav-text current">欢迎登入</span></a>   
                <ul class="subnav current">
-                    	<li class="subnav-li current" href="index.jsp" data-id="1"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">主页</span></a></li>
+                    	<li class="subnav-li current" href="index" data-id="1"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">主页</span></a></li>
                     </ul>        	             	
                  </li>
                   <li class="nav-li">
@@ -32,15 +32,14 @@
                     <ul class="subnav">
                     	<li class="subnav-li" href="goodsList" data-id="2"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">商品列表</span></a></li>
                         <li class="subnav-li" href="goodsAdd.jsp" data-id="3"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">添加商品</span></a></li>
-                        <li class="subnav-li" href="index.jsp" data-id="4"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">自定义设置1</span></a></li>
+
                     </ul>
                 </li>
                  <li class="nav-li">
                 	<a href="javascript:;" class="ue-clear"><i class="nav-ivon"></i><span class="nav-text">订单管理</span></a>
                     <ul class="subnav">
                     	<li class="subnav-li" href="orderList" data-id="5"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">订单列表</span></a></li>
-                        <li class="subnav-li" href="index.jsp" data-id="6"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">自定义设置2</span></a></li>
-                    </ul>
+                        </ul>
                 </li>
                 <li class="nav-li">
                 	<a href="javascript:;" class="ue-clear"><i class="nav-ivon"></i><span class="nav-text">客户管理</span></a>
@@ -48,23 +47,20 @@
                     	<li class="subnav-li" href="userList" data-id="7"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">客户列表</span></a></li>
                         <li class="subnav-li" href="userAdd.jsp" data-id="8"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">添加客户</span></a></li>
                       <!--   <li class="subnav-li" href="userCenter.jsp" data-id="9"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">修改客户信息</span></a></li> -->
-                         <li class="subnav-li" href="index.jsp" data-id="10"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">自定义设置3</span></a></li>
-                    </ul>
+                        </ul>
                 </li>
                 <li class="nav-li">
                 	<a href="javascript:;" class="ue-clear"><i class="nav-ivon"></i><span class="nav-text">分类管理</span></a>
                     <ul class="subnav">
                     	<li class="subnav-li" href="typeList" data-id="11"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">分类列表</span></a></li>
                         <!--  <li class="subnav-li" href="typeEdit.jsp" data-id="12"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">编辑分类</span></a></li>-->
-                        <li class="subnav-li" href="index.jsp" data-id="13"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">自定义设置4</span></a></li>
-                    </ul>
+                           </ul>
                 </li>
                 <li class="nav-li last-nav-li">
                 	<a href="javascript:;" class="ue-clear"><i class="nav-ivon"></i><span class="nav-text">管理员</span></a>
                     <ul class="subnav">
                     	<li class="subnav-li" href="adminChangePwd.jsp" data-id="14"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">修改密码</span></a></li>
                        <!--  <li class="subnav-li" href="typeList" data-id="15"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">退出</span></a></li> -->
-                        <li class="subnav-li" href="index.jsp" data-id="16"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">自定义设置5</span></a></li>
                     </ul>
                 </li>
             </ul>
